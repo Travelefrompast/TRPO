@@ -14,6 +14,9 @@ include "Burkauskas/BurkauskasException.php";
 ini_set("display_errors", 1);
 error_reporting(-1);
 
+$version = file_get_context("version.txt");
+MyLog::log("Версия программы ".$version);
+
 try {
     $values = array();
     for($i = 1; $i < 4; $i++){
