@@ -1,0 +1,26 @@
+{
+    "name": "travelerfrompast/trpo",
+    "type": "project",
+    "authors": [
+        {
+            "name": "TravelerFromPast",
+            "email": "travelerfrompast@gmail.com"
+        }
+    ],
+    "repositories": [
+
+        {
+            "type": "git",
+            "url": "https://github.com/TravelerFromPast/Burkauskas.git"
+        },
+		{
+            "type": "git",
+            "url": "https://github.com/rok9ru/trpo-core.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "travelerfrompast/burkauskas":"^1.0"
+    },
+    "description": ""
+}
