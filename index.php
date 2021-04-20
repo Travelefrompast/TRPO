@@ -3,18 +3,12 @@
 use Burkauskas\BurkauskasException;
 use Burkauskas\MyLog;
 
-include "Core/EquationInterface.php";
-include "Core/LogInterface.php";
-include "Core/LogAbstract.php";
-include "Burkauskas/Equation.php";
-include "Burkauskas/QuEquation.php";
-include "Burkauskas/MyLog.php";
-include "Burkauskas/BurkauskasException.php";
-
 ini_set("display_errors", 1);
 error_reporting(-1);
 
-$version = file_get_context("version.txt");
+require __DIR__ . '/vendor/autoload.php';
+
+$version = file_get_contents("version");
 MyLog::log("Версия программы ".$version);
 
 try {
@@ -27,7 +21,7 @@ try {
     $b = $values[1];
     $c = $values[2];
     MyLog::log("Переменные: (". $a .",". $b .",". $c .")");
-    $v = new\Burkauskas\B();
+    $v = new\Burkauskas\QuEquation();
     $x = $v->solve($a,$b,$c);
     $str = implode(",", $x);
     \Burkauskas\MyLog::log("Корни уровнения:".$str);

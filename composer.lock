@@ -1,0 +1,73 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "38409041eea08b1ded076affa3ebf3b0",
+    "packages": [
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core.git",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395"
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "core\\": "core"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "Project for lesson subject \"TRPO\" test project",
+            "time": "2021-01-13T12:08:11+00:00"
+        },
+        {
+            "name": "travelerfrompast/burkauskas",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TravelerFromPast/Burkauskas.git",
+                "reference": "f4e24395144ca9bf5027287d3cd10e4c3d84fb81"
+            },
+            "require": {
+                "rok9ru/trpo-core": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Burkauskas\\": "Burkauskas"
+                }
+            },
+            "authors": [
+                {
+                    "name": "TravelerFromPast",
+                    "email": "travelerfrompast@gmail.com"
+                }
+            ],
+            "time": "2021-04-20T07:08:24+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
